@@ -17,7 +17,7 @@ const Footer = () => {
         <div style={styles.copyright}>
           <p>© 2024 TravelStory LLC. All rights reserved.</p>
           <div style={styles.legalLinks}>
-            <a href="/terms" style={styles.legalLink}>Terms of Use</a>
+            <a href="/terms" style={styles.legalLink}>Terms and Conditions</a>
             <a href="/privacy" style={styles.legalLink}>Privacy and Cookies Statement</a>
           </div>
         </div>
