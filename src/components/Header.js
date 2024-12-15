@@ -7,7 +7,7 @@ const Header = () => {
     <header style={styles.header}>
       <div style={styles.logo}>
         <img src="/assets/travel-logo-design.jpg" alt="TravelWebsite" style={styles.logoImage} />
-        <span style={styles.logoText}>TravelStory</span>
+        <span style={styles.logoText}>TripStory</span>
       </div>
       <div style={styles.authButtons}>
         <Link to="/login"><Button variant="outlined" color="primary">Login</Button></Link>
