@@ -14,15 +14,18 @@ const SearchBar = () => {
 
   return (
     <div style={styles.searchContainer}>
+      {/* Simple TextField Input */}
       <TextField
-        label="Where to ?"
+        label="Where to?"
         variant="outlined"
-        size="large"
+        size="medium"
         value={city}
         onChange={(e) => setCity(e.target.value)}
         onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
         style={styles.searchInput}
       />
+
+      {/* Search Button */}
       <Button
         variant="contained"
         color="primary"
@@ -50,10 +53,7 @@ const styles = {
     borderRadius: '8px',
   },
   searchInput: {
-    maxWidth: '600px',
-    width: '100%',
-    position: 'relative',
-    left: '5px',
+    width: '1000px', // Increased width to 10 times bigger as requested
     borderRadius: '12px',
     backgroundColor: 'white',
   },
@@ -62,8 +62,6 @@ const styles = {
     padding: '0 20px',
     fontSize: '16px',
     fontWeight: 'bold',
-    position: 'relative',
-    left: '5px',
     borderRadius: '8px',
     transition: 'background-color 0.3s ease',
   },
