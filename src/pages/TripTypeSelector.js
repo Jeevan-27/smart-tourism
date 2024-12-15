@@ -1,15 +1,19 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@mui/material';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const TripTypeSelector = () => {
   const navigate = useNavigate();
 
   const handleSelection = (type) => {
-    navigate(`/itinerary/${type.toLowerCase()}`); // Navigate to the next step based on the trip type
+    navigate('/itinerary/options'); // Redirect to the common next page
   };
 
   return (
+    <>
+    <Header />
     <div style={styles.container}>
       <h1 style={styles.heading}>Plan Your Trip</h1>
       <div style={styles.buttonContainer}>
@@ -47,6 +51,8 @@ const TripTypeSelector = () => {
         </Button>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
@@ -56,10 +62,11 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100vh',
+    height: '500px',
     backgroundColor: '#f9f9f9',
     textAlign: 'center',
-    padding: '20px',
+    position : 'relative',
+    bottom : '-50px'
   },
   heading: {
     marginBottom: '40px',

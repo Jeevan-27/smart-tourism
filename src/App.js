@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import LoginRegister from './pages/LoginRegister';
 import TripTypeSelector from './pages/TripTypeSelector';
 import Places from './pages/Places';
+import DestinationOptions from './pages/DestinationOptions';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/places/:city" element={<Places />} />
         <Route path="/login" element={<LoginRegister />} />
         <Route path="/itinerary" element={<TripTypeSelector />} />
+        <Route path="/itinerary/options" element={<DestinationOptions />} />
       </Routes>
     </Router>
   );
