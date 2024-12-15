@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import LoginRegister from './pages/LoginRegister';
+import TripTypeSelector from './pages/TripTypeSelector';
 import Places from './pages/Places';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/places/:city" element={<Places />} />
         <Route path="/login" element={<LoginRegister />} />
+        <Route path="/itinerary" element={<TripTypeSelector />} />
       </Routes>
     </Router>
   );
