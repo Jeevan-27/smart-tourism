@@ -4,13 +4,7 @@ import Home from './pages/Home';
 import LoginRegister from './pages/LoginRegister';
 import TripTypeSelector from './pages/TripTypeSelector';
 import Places from './pages/Places';
-<<<<<<< HEAD
-import Destination from './pages/Destination';
-import ScheduleDate from './pages/ScheduleDate';
-import Organized from './pages/Organized';
-=======
 import DestinationOptions from './pages/DestinationOptions';
->>>>>>> 91e2b6557633533d2e40208c6d77f0298570f5ec
 
 function App() {
   return (
